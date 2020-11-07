@@ -28,6 +28,7 @@ import SignOut from "./SignOut";
 import SignIn from "./SignIn";
 import QrcodeScreen from "./QrcodeScreen";
 import QrgeneratorScreen from "./QrgeneratorScreen";
+import DirectionScreen from "./DirectionScreen";
 
 
 /*----------------CETTE PARTIE CONCERNE LA TOP TAB BAR----------------------------*/
@@ -153,6 +154,19 @@ const MapScreenStack = createStackNavigator({
         />
       ),*/
     }),
+  },
+  DirectionScreen: {
+    screen: DirectionScreen,
+    navigationOptions: {
+      title: "DIRECTION ",
+      headerStyle: {
+        backgroundColor: "#095228",
+      },
+      headerTintColor: "#fff",
+      headerTitleStyle: {
+        fontWeight: "bold",
+      },
+    },
   },
 });
 

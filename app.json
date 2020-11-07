@@ -21,6 +21,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Cette application est encore une version beta, elle consiste a gerer les bacs à ordure dans une zone donnée",
+    "githubUrl": "https://github.com/DIBANDI/CityCleaner.git"
   }
 }

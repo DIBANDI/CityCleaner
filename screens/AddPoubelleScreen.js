@@ -61,7 +61,7 @@ class AddPoubelleScreen extends Component {
       }
     );
     
-        }
+  }
     
     
   storeBac() {

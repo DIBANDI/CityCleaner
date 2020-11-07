@@ -6,9 +6,7 @@ import {
 } from 'react-native';
 import firebase from '../database/firebaseDb';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
-
 const { width, height } = Dimensions.get('window');
-
 const ASPECT_RATIO = width / height;
 const LATITUDE = 43.696795;
 const LONGITUDE = 7.276599;
@@ -92,6 +90,11 @@ constructor() {
             coordinate={{ latitude: marker.latitude, longitude: marker.longitude, }}
             title={ marker.adresse }
             description={ marker.description } 
+            onPress={() => {
+              this.props.navigation.navigate("DirectionScreen", {
+                userkey: marker.key,
+              });
+            }}
             />
         
          ))}
